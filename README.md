@@ -1,4 +1,4 @@
-# Email Generator for Job Applications
+# IntrestMail- Email Generator for Job Applications
 
 This project is an email generator designed to help you express your interest in job positions at various companies. 
 By pasting the job posting link into the UI, it will scrape the content from the web page, analyze the job description, and generate a customized email. The email will include your skills and qualifications, crafted using **Llama-3.12-70B** (Groq Cloud).
@@ -26,7 +26,7 @@ You can create your own API key by registering on [Groq Cloud](https://groq.com/
 ### 3. Replace Portfolio CSV with Your CSV File
 
 This project includes a `portfolio.csv` file that contains project links. 
-You need to replace it with a CSS file that contains links to your own projects. Make sure the format follows the required structure for easy integration with the email generation.
+You need to replace it with a CSV file that contains links to your own projects. Make sure the format follows the required structure for easy integration with the email generation.
 
 ### 4. Run the Application
 
@@ -36,7 +36,7 @@ Once the dependencies are installed and the necessary files are replaced, you ca
 ## Notes
 
 - Make sure to replace the placeholder API key with your own Groq Cloud API key to access the Llama-3.12-70B model.
-- The CSS file should contain your project links in a format that the generator can process.
+- The CSV file should contain your project links in a format that the generator can process.
 - The tool scrapes job postings and creates a personalized email using the scraped content and your skills. Ensure the job posting link you provide is publicly accessible.
 
 ## License
