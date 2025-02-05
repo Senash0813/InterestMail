@@ -1,9 +1,21 @@
 import streamlit as st
 from langchain_community.document_loaders import WebBaseLoader
+import os
+import streamlit as st
+from dotenv import load_dotenv
+
 
 from chains import Chain
 from portfolio import Portfolio
 from utils import clean_text
+
+# Decrypt .env.enc if running on Streamlit Cloud
+if "DECRYPT_KEY" in st.secrets:
+    decrypt_command = f"openssl aes-256-cbc -d -salt -pbkdf2 -in .env.enc -out .env -k {st.secrets['DECRYPT_KEY']}"
+    os.system(decrypt_command)
+
+# Load environment variables
+load_dotenv()
 
 # ✅ Move this line to the very top before any Streamlit functions
 st.set_page_config(layout="wide", page_title="InterestMail", page_icon="📧")
