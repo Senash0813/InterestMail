@@ -1,4 +1,4 @@
-# IntrestMail- Email Generator for Job Applications
+# InterestMail- Email Generator for Job Applications
 
 This project is an email generator designed to help you express your interest in job positions at various companies. 
 By pasting the job posting link into the UI, it will scrape the content from the web page, analyze the job description, and generate a customized email. The email will include your skills and qualifications, crafted using **Llama-3.12-70B** (Groq Cloud).
